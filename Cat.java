@@ -3,12 +3,16 @@ public class Cat {
     String name;
     double weight;
     
-    String getName(){
+    String getName(){ //gets the cat's name
         return name;
     }
     
-    double getWeight(){
+    double getWeight(){ //gets the cat's weight
         return weight;
+    }
+    
+    void setWeight(double newWeight){ //sets the cat's weight
+        weight = newWeight;
     }
     
     //empty cat constructor
