@@ -14,6 +14,11 @@ public class TestCatList {
             //uses setter function and rng to make weight
             currentCat.setWeight(Math.random()*10+5);
         }
+        
+        for (Cat currentCat: catList){
+            //Lets user set each cat's name
+            currentCat.userSetName();
+        }
         //Goes through every cat's name and weight and has them meow
         for (Cat currentCat: catList) {
             System.out.println(currentCat.getName() + " weighs " + currentCat.getWeight() + " pounds.");
