@@ -53,7 +53,20 @@ public class Cat {
             System.out.println("Bork");
         }
         else {
-            System.out.println("Meow");
+            //Only does the weight-meow if the weight is given
+            if (weight>0 && weight < 20){
+                //Figures out how many o's to put
+                int meowConversion = (int)(weight/2);
+                System.out.print("Me");
+                //Actually prints out the o's
+                for (int i = 0; i != meowConversion; i++) {
+                    System.out.print("o");
+                }
+                System.out.println("w");
+            }
+            else { //if the weight isn't given
+                System.out.println("Meow");
+            }
         }        
     }
 }
